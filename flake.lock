@@ -240,7 +240,7 @@
         "haskell-flake": "haskell-flake",
         "heist": "heist",
         "heist-extra": "heist-extra",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
@@ -528,21 +528,6 @@
     },
     "flake-utils": {
       "locked": {
-        "lastModified": 1667395993,
-        "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "5aed5285a952e0b949eb3ba02c12fa4fcfef535f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "flake-utils_2": {
-      "locked": {
         "lastModified": 1667077288,
         "narHash": "sha256-bdC8sFNDpT0HK74u9fUkpbf1MEzVYJ+ka7NXCdgBoaA=",
         "owner": "numtide",
@@ -556,7 +541,7 @@
         "type": "github"
       }
     },
-    "flake-utils_3": {
+    "flake-utils_2": {
       "locked": {
         "lastModified": 1667395993,
         "narHash": "sha256-nuEHfE/LcWyuSWnS8t12N1wc105Qtau+/OdUAjtQ0rA=",
@@ -694,7 +679,7 @@
       "inputs": {
         "flake-parts": "flake-parts_3",
         "nix-darwin": "nix-darwin",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_2",
         "pre-commit-hooks-nix": "pre-commit-hooks-nix"
       },
       "locked": {
@@ -1030,22 +1015,6 @@
         "type": "github"
       }
     },
-    "nixos-vscode-server": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1676159144,
-        "narHash": "sha256-/TJD9hZ0+u7oSJkNxmAE/UlxndFkZCu1fC6re7I/DYY=",
-        "owner": "msteen",
-        "repo": "nixos-vscode-server",
-        "rev": "43ca5e6d4e45ae6933aaeb1850b4cdf62c25a11f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "msteen",
-        "repo": "nixos-vscode-server",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1673540789,
@@ -1314,22 +1283,6 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1668443372,
-        "narHash": "sha256-lXNlVyNWwO22/JUdBtUWz68jZB3DM+Jq/irlsbwncI0=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "dad4de1694cd92d9a0e123bfdf134d0047b836a5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_3": {
-      "locked": {
         "lastModified": 1670495322,
         "narHash": "sha256-PYwHXymeQZBrTylwDd4LgozTAgrJmp3UGf3mgnKPRr0=",
         "owner": "NixOS",
@@ -1344,7 +1297,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_3": {
       "locked": {
         "lastModified": 1678875422,
         "narHash": "sha256-T3o6NcQPwXjxJMn2shz86Chch4ljXgZn746c2caGxd8=",
@@ -1605,7 +1558,7 @@
     },
     "pre-commit-hooks-nix": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
+        "flake-utils": "flake-utils",
         "nixpkgs": [
           "hci",
           "nixpkgs"

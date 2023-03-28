@@ -7,10 +7,9 @@
     ripgrep
     sd
     pandoc
-    nodejs # Required for VSCode's webhint extension
-    gh
+    # gh
     nixpkgs-fmt
-    emanote
+    # emanote
     flake.inputs.hci.packages.${pkgs.system}.hercules-ci-cli
     flake.inputs.nixpkgs-match.packages.${pkgs.system}.default
 

@@ -6,7 +6,7 @@
         home.stateVersion = "22.11";
         imports = [
           ./tmux.nix
-          ./neovim.nix
+#          ./neovim.nix
           ./starship.nix
           ./terminal.nix
           ./git.nix

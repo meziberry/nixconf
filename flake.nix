@@ -1,5 +1,5 @@
 {
-  description = "Srid's NixOS configuration";
+  description = "w's NixOS configuration";
 
   inputs = {
     # Principle inputs
@@ -32,14 +32,9 @@
     devour-flake.flake = false;
 
     # Emacs
-    emacs-overlay.url = "github:nix-community/emacs-overlay";
-    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
+#    emacs-overlay.url = "github:nix-community/emacs-overlay";
+#    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
 
-    # Vim & its plugins (not in nixpkgs)
-    zk-nvim.url = "github:mickael-menu/zk-nvim";
-    zk-nvim.flake = false;
-    coc-rust-analyzer.url = "github:fannheyward/coc-rust-analyzer";
-    coc-rust-analyzer.flake = false;
   };
 
   outputs = inputs@{ self, ... }:
@@ -73,7 +68,7 @@
 
         # Configurations for my (only) macOS machine (using nix-darwin)
         darwinConfigurations = {
-          appreciate = self.nixos-flake.lib.mkARMMacosSystem {
+          wAir = self.nixos-flake.lib.mkARMMacosSystem {
             imports = [
               self.darwinModules.default # Defined in nix-darwin/default.nix
               ./nixos/hercules.nix

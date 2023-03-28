@@ -1,14 +1,14 @@
 {
-  myself = "srid";
+  myself = "w";
   users = {
-    srid = {
-      name = "Sridhar Ratnakumar";
-      email = "srid@srid.ca";
+    w = {
+      name = "noZ";
+      email = "i@aib.dev";
       sshKeys = [
         # Legacy
-        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYQ003p7fB5ICQehLwhDBomY9WzkNBeijkSw9ADGU+ECrPakeIH3pntUWRJH1W93vKnLqpkn6HLGEXD9MCR0s98uhh8hT7uAYCxQTbEeKT3PYkfz3oe7XaR8rE601sds0ZyFwH7l8cvK97pGr+uhFXAaohiV6VqmLVXhManEjZZ8GfYWBD9BCmIJk43G3OGa5QYFeHqztprXaJNU5dFPv2Uq2C+L6EvfCfkK2OO1BLZgL+Rai5jjyy6k0fcfsxxd9BdGUwqDhcBeyTIzX9rePMugf/xD+6uNRxTU+vjVpGUtFOw6rpgmVyFv9mn3QMNdQBc5hYKVbIQwMNGTzGgcQv srid@nixos"
+        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDQDnJW2/pazIXCUWOry5UsMx4iDLX4ru+gvLVDpNzUavbMCcRW2sLiq1m44Wo1vAT6Cy2rM33eq6nPXiggoI4G47kdnSQjQO+Gny9e5VKtqI5hkYn3PQDABDIdhbIBXgE+dkVzxFwy0nyC2fjwNVYnFSLkOdszSmTEfuxt68pQOFlKNo5Nxthz6IuQQ1Wjr/AAWRgs3EGH0zf/nbgsDqb5VQSA1KEnOStUj2Z9R29fBsa+en0t1/Y0g7SYasqwrl+87coqKmLEYR1O5qeKKP2c+ujub+5pJphgPuQzJ0aIkn/tkj7oa0xcKKOis9Zrt9hCwVU20VowwJ30zIkEcmA9iXntDtpyLIJhQNJqYN8vV8t9v9QeReBtpop9FRc2trR4AaHXqD9/+LSOr8OJ40ctFzJBgMaj/Vk2TBi6zuYvFrqXOhpW24y7UJNkZujbKl/nVCFsCyHCNCQCKBN8CHusHdOIZ6n/fa1Y3kzD+Myv+EDe/AMaT5k80c/aFlkebFnMBOc0nD2ytvOierWDEHtaVKZDXfddyIWUh6CFfZ+6E+azF9x3rmW58CDisV0YE0gVavDKXaccp1B+hCAiHKEutzV568jxhA/8iq4ekyl2lR1bVD93HT/lVj0aTEyFXS63R2MVsgiJl6oML2dmrv9A0tad1n1hGZHz9lvvYxUNkw== i@wAir"
         # New
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHQRxPoqlThDrkR58pKnJgmeWPY9/wleReRbZ2MOZRyd"
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAWrhQDvBF94EsQD47Qq/sv+BHcrHEzGTHHvW2Qykxwu i@wAir"
       ];
     };
   };
