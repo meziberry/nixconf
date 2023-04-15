@@ -6,6 +6,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     flake-parts.url = "github:hercules-ci/flake-parts";
     nix-darwin.url = "github:lnl7/nix-darwin";
+    #nix-darwin.url = "git+file:../darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -32,8 +33,8 @@
     devour-flake.flake = false;
 
     # Emacs
-#    emacs-overlay.url = "github:nix-community/emacs-overlay";
-#    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
+    #    emacs-overlay.url = "github:nix-community/emacs-overlay";
+    #    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
 
   };
 

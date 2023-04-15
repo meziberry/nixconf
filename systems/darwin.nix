@@ -2,9 +2,19 @@
 
 {
   environment.systemPackages = with pkgs; [
+    curl
+    direnv
+    fzf
+    gnupg
+    jq
+    shellcheck
+    zoxide
+    nix-index
+
     asciinema
     wget
     ripgrep
+    ugrep
     sd
     pandoc
     # gh
@@ -45,6 +55,8 @@
   # TODO: Use nix.nix?
   nix = {
     nixPath = [ "nixpkgs=${flake.inputs.nixpkgs}" ]; # Enables use of `nix-shell -p ...` etc
+    #"darwin=$HOME/.nix-defexpr/darwin"
+
     registry.nixpkgs.flake = flake.inputs.nixpkgs; # Make `nix shell` etc use pinned nixpkgs
     extraOptions = ''
       extra-platforms = aarch64-darwin x86_64-darwin

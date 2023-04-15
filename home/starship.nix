@@ -16,6 +16,10 @@
         trim_at = ".local";
         disabled = false;
       };
+      git_branch = {
+        symbol = "ڴ ";
+        ignore_branches = [ "master" "main" ];
+      };
     };
   };
 }
