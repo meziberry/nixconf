@@ -9,9 +9,9 @@
     };
     overlays = [
       flake.inputs.jenkins-nix-ci.overlay
-      flake.inputs.nuenv.overlays.nuenv
+      # flake.inputs.nuenv.overlays.nuenv
       flake.inputs.nixd.overlays.default
-      flake.inputs.nuenv.overlays.default
+      # flake.inputs.nuenv.overlays.default
       (import ../packages/overlay.nix { inherit flake; inherit (pkgs) system; })
     ];
   };

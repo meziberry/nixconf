@@ -3,18 +3,20 @@
   flake = {
     homeModules = {
       common = {
-        home.stateVersion = "22.11";
+        home.stateVersion = "23.11";
         imports = [
-          ./tmux.nix
-          ./neovim.nix
-          ./helix.nix
-          ./starship.nix
           ./terminal.nix
+          ./starship.nix
           ./git.nix
           ./direnv.nix
           ./zellij.nix
-          # ./nushell.nix
           ./just.nix
+          ./elvish.nix
+          ./emacs.nix
+          # ./helix.nix
+          # ./tmux.nix
+          # ./neovim.nix
+          # ./nushell.nix
           # ./powershell.nix
         ];
       };
@@ -22,7 +24,7 @@
         imports = [
           self.homeModules.common
           ./bash.nix
-          ./vscode-server.nix
+          # ./vscode-server.nix
         ];
       };
       common-darwin = {
@@ -31,7 +33,6 @@
           ./zsh.nix
           ./bash.nix
           # ./kitty.nix
-          # ./emacs.nix
         ];
       };
     };

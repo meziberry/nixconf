@@ -24,14 +24,14 @@
 
   home.packages = [
     # Open zellij by prompting for CWD
-    (pkgs.nuenv.mkScript {
-      name = "zux";
-      script = ''
-        let PRJ = (zoxide query -i)
-        let NAME = ($PRJ | parse $"($env.HOME)/{relPath}" | get relPath | first | str replace -a / ／)
-        echo $"Launching zellij for ($PRJ)"
-        cd $PRJ ; exec zellij attach -c $NAME
-      '';
-    })
+    # (pkgs.nuenv.mkScript {
+    #   name = "zux";
+    #   script = ''
+    #     let PRJ = (zoxide query -i)
+    #     let NAME = ($PRJ | parse $"($env.HOME)/{relPath}" | get relPath | first | str replace -a / ／)
+    #     echo $"Launching zellij for ($PRJ)"
+    #     cd $PRJ ; exec zellij attach -c $NAME
+    #   '';
+    # })
   ];
 }

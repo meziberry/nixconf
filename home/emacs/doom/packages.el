@@ -48,5 +48,9 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+(disable-packages! ccls)
 
-(package! org-drill)
+(package! lsp-bridge
+  :recipe (:host github :repo "manateelazycat/lsp-bridge"
+           :files (:defaults "*.el" "*.py" "acm" "core" "langserver" "multiserver" "resources")
+           :build (:not compile)))

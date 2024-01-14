@@ -1,5 +1,5 @@
 {
-  description = "Srid's NixOS / nix-darwin configuration";
+  description = "NixOS / nix-darwin configuration";
 
   inputs = {
     # Principle inputs
@@ -26,7 +26,7 @@
     nixos-vscode-server.url = "github:nix-community/nixos-vscode-server";
     emanote.url = "github:srid/emanote";
     nixpkgs-match.url = "github:srid/nixpkgs-match";
-    nuenv.url = "github:DeterminateSystems/nuenv";
+    # nuenv.url = "github:DeterminateSystems/nuenv";
     nixd.url = "github:nix-community/nixd";
     nixci.url = "github:srid/nixci";
     actual.url = "github:srid/actual";
@@ -34,13 +34,9 @@
 
     # Emacs
     emacs-overlay.url = "github:nix-community/emacs-overlay";
-    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
-
-    # Vim & its plugins (not in nixpkgs)
-    zk-nvim.url = "github:mickael-menu/zk-nvim";
-    zk-nvim.flake = false;
-    coc-rust-analyzer.url = "github:fannheyward/coc-rust-analyzer";
-    coc-rust-analyzer.flake = false;
+    # nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
+    doomemacs.url = "github:meziberry/doomemacs";
+    doomemacs.flake = false;
 
     # Devshell
     treefmt-nix.url = "github:numtide/treefmt-nix";
@@ -79,7 +75,7 @@
 
         # Configurations for my (only) macOS machine (using nix-darwin)
         darwinConfigurations = {
-          appreciate = self.nixos-flake.lib.mkMacosSystem {
+          wAir = self.nixos-flake.lib.mkMacosSystem {
             nixpkgs.hostPlatform = "aarch64-darwin";
             imports = [
               self.darwinModules.default # Defined in nix-darwin/default.nix

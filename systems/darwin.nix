@@ -4,8 +4,19 @@
 {
   environment.systemPackages = with pkgs; [
     # macOS GUI programs
-    wezterm
-    utm
+    elvish
+    curl
+    direnv
+    fzf
+    gnupg
+    jq
+    shellcheck
+    zoxide
+    nix-index
+
+    (ripgrep.override { withPCRE2 = true; })
+    fd
+    sd
   ];
 
   security.pam.enableSudoTouchIdAuth = true;
