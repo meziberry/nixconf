@@ -1,10 +1,11 @@
-{ self, ... }:
+{ self, inputs, ... }:
 {
   flake = {
     homeModules = {
       common = {
-        home.stateVersion = "23.11";
+        home.stateVersion = "24.05";
         imports = [
+          inputs.nix-index-database.hmModules.nix-index
           ./terminal.nix
           ./starship.nix
           ./git.nix
@@ -13,6 +14,8 @@
           ./just.nix
           ./elvish.nix
           ./emacs.nix
+          ./nix.nix
+          # ./ssh.nix
           # ./helix.nix
           # ./tmux.nix
           # ./neovim.nix

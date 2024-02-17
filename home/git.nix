@@ -34,6 +34,13 @@
       # Pretty log output
       hist = "log --pretty=format:'%C(auto, yellow)%h%Creset %C(auto,dim cyan) %ad%Creset|%C(auto,italic ul dim magenta)%an%Creset%C(auto)%d%Creset %s' --graph --date=short --abbrev-commit";
     };
+    iniContent = {
+      # Branch with most recent change comes first
+      branch.sort = "-committerdate";
+      # Remember and auto-resolve merge conflicts
+      # https://git-scm.com/book/en/v2/Git-Tools-Rerere
+      rerere.enabled = true;
+    };
     ignores = [ "*~" "*.swp" ".DS_Store" ];
     delta = {
       enable = true;
@@ -51,14 +58,11 @@
       pull.rebase = "false";
       push.default = "current";
       rebase.autosquash = true;
-      rerere.enabled = true;
       protocol.hg.allow = "always";
       core = {
         editor = "vim";
         autocrlf = false;
         safecrlf = true;
-        # For supercede
-        symlinks = true;
       };
       color = {
         diff = "auto";

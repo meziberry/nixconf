@@ -7,8 +7,8 @@
     moreutils # ts, etc.
 
     # Useful for Nix development
-    devour-flake
     nixci
+    nix-health
     nil
     nixpkgs-fmt
 
@@ -42,6 +42,7 @@
       enable = true;
       enableZshIntegration = true;
     };
+    nix-index-database.comma.enable = true;
     lsd = {
       enable = true;
       enableAliases = true;
